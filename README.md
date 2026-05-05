@@ -21,7 +21,7 @@ If you are using Maven, add the following dependency to your `pom.xml`:
 <artifactId>jnativehook</artifactId>
 <version>2.2.2</version>
 </dependency>
-
+```
 ## How It Works
 1. **Initialization:** On startup, the program parses a raw string of coordinate data. It extracts the X and Y values, inverts them, and multiplies them by 3 to calculate the final offsets: $X_{offset} = -X_{raw} \times 3$ and $Y_{offset} = -Y_{raw} \times 3$. Depent's on your monitor resolution mine is 1920-1200 lower multiplication if you have lower resolution
 2. **Listening:** The program attaches a native hook to the OS to listen for mouse states.
